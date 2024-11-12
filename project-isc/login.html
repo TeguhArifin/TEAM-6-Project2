@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css" />
+    <title>Halaman LOGIN</title>
+  </head>
+  <body>
+    <form class="my-form">
+      <div class="login-welcome-row">
+        <a href="#" title="logo">
+          <img src="/src/user.png" alt="" class="logo" />
+        </a>
+        <h1>sign in untuk begabung</h1>
+      </div>
+      <div class="social-row">
+        <a href="" title="Use Google">
+          <img src="/src/google.png" alt="Google" />
+          Sign in with Google
+        </a>
+      </div>
+      <div class="lines">
+        <div class="line"></div>
+        OR
+        <div class="line"></div>
+      </div>
+      <div class="text-field">
+        <label for="email">email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="off"
+          placeholder="your@gmail.com"
+          required
+        />
+        <div class="error-massage">Format email salah</div>
+      </div>
+      <div class="text-field">
+        <label for="password">password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="off"
+          placeholder="masukan password"
+          required
+        />
+        <div class="error-massage">Format password salah</div>
+      </div>
+      <button type="submit" class="my-form_button">LOGIN</button>
+      <div class="my-form_actions">
+        <div class="my-form_row">
+          <span>Belum memiliki akun?</span>
+          <a href="#" title="Create Account"> SIGN UP </a>
+        </div>
+      </div>
+    </form>
+    <script src="/public/login.js"></script>
+  </body>
+</html>
