@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM 6 - PROJECT 2</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/project-isc/css/main.css" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=globe_uk"
+    />
+  </head>
+  <body>
+    <!-- START NAVIGASI -->
+    <nav class="navbar">
+      <div class="logo">
+        <i class="material-symbols-outlined"> globe_uk </i>
+        <a href="#">TEAM 6</a>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu-links">
+          <a href="#">DASBOARD</a>
+          <a href="#myteam">MY TEAM</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <a href="/project-isc/login.html" id="authButton">
+          <button class="log-in" id="authButtonText">LOG IN</button>
+        </a>
+      </div>
+      <div class="menu-btn" id="menu-btn">
+        <i class="material-icons" id="menu-icon">menu</i>
+      </div>
+    </nav>
+    <!-- END NAVIGASI -->
+
+    <!-- START MY TEAM -->
+    <h1 class="container-card" id="myteam">MY TEAM</h1>
+    <div class="container">
+      <div class="box">
+        <img src="" alt="" />
+        <div class="childern-card">
+          <h1 class="nama">Nama</h1>
+          <h1 class="nama">Nim</h1>
+        </div>
+      </div>
+      <div class="box">
+        <img src="" alt="" />
+        <div class="childern-card">
+          <h1 class="nama">Nama</h1>
+          <h1 class="nama">Nim</h1>
+        </div>
+      </div>
+      <div class="box">
+        <img src="" alt="" />
+        <div class="childern-card">
+          <h1 class="nama">Nama</h1>
+          <h1 class="nama">Nim</h1>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/project-isc/src/TeguhArifin.png" alt="" />
+        <div class="childern-card">
+          <h1 class="nama">Teguh Arifinn</h1>
+          <h1 class="nama">221011450245</h1>
+        </div>
+      </div>
+    </div>
+    <!-- END MY TEAM-->
+
+    <script src="/project-isc/js/main.js"></script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          menuIcon.textContent = "close";
+        } else {
+          menuIcon.textContent = "menu";
+        }
+      });
+
+      // Fungsi untuk mengatur tombol login/logout
+      function updateAuthButton() {
+        const authButton = document.getElementById("authButton");
+        const authButtonText = document.getElementById("authButtonText");
+        const logoutButton = document.getElementById("logoutButton");
+      }
+    });
+  </script>
+</html>
